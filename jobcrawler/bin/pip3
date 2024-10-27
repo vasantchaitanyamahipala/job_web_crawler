@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/vc/Documents/Fall 2024/SOFTWARE ARCHITECTURE (SENG 5861)/Assignments/job_web_crawler/job_web_crawler/jobcrawler/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
